@@ -1,0 +1,26 @@
+
+version: '3.8'
+services:
+  api:
+    build: ./api
+    ports:
+      - '8000:8000'
+    environment:
+      - PARSER_URL=http://parser:8100/parse
+      - RANKER_URL=http://ranker:8200/rank
+    depends_on:
+      - parser
+      - ranker
+      - scheduler
+  parser:
+    build: ./parser_service
+    ports:
+      - '8100:8100'
+  ranker:
+    build: ./ranking_service
+    ports:
+      - '8200:8200'
+  scheduler:
+    build: ./scheduler_service
+    ports:
+      - '8300:8300'

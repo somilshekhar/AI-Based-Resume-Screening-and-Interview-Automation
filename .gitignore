@@ -1,0 +1,63 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.manifest
+*.spec
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+
+# VS Code
+.vscode/
+*.code-workspace
+
+# Logs & Debug
+*.log
+*.pot
+*.pyc
+*.pkl
+*.db
+*.sqlite3
+
+# Coverage / Test
+.coverage
+.tox/
+.nox/
+pytest_cache/
+htmlcov/
+.cache/
+
+# Jupyter / IPython
+.ipynb_checkpoints
+*.ipynb
+
+# Docker
+*.pid
+*.seed
+*.pid.lock
+.dockerignore
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environments
+.env
+.env.local
+.env.*.local
+
+# Project-specific
+sample_data/*.docx
+sample_data/*.txt
