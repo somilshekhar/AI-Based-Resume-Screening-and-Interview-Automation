@@ -6,6 +6,9 @@ assessment's requirements. It's a deployable starting point — not a drop-in fi
 includes all major components, integration points, and sample implementations to demonstrate
 how the full system would operate.
 
+<img width="1268" height="604" alt="image" src="https://github.com/user-attachments/assets/03955877-2782-4386-8f40-fa71d5c92be7" />
+
+
 ## Architecture Overview
 - **api/** - FastAPI gateway and orchestration layer (exposes REST API)
 - **parser_service/** - Resume parsing microservice (PDF/DOCX/OCR, NER via spaCy)
